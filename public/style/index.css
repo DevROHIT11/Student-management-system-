@@ -1,0 +1,232 @@
+/* header */
+* {
+    font-family: sans-serif;
+}
+
+.header {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+/* form styling */
+.form {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ddd;
+    background-color: #f2f2f2;
+}
+
+#student-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    gap: 1rem;
+}
+
+#student-form input {
+    width: 100%;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+     border: 1px solid black;
+}
+#student-form input:focus ,
+#student-form input:hover{
+    border: 2px solid black;
+}
+
+#select {
+    width: 100%;
+    margin: 5px;
+    padding: 11px;
+    border-radius: 10px;
+   
+    
+}
+#select:focus{
+    border: 2px solid black;
+}
+#select option{
+   padding: 10px;
+  background-color: #eebbfc;
+  color: #333;
+  border: none;
+ 
+}
+option:hover{
+    background-color: #333;
+}
+option:checked,
+option:focus,
+option:active {
+  background-color: #6c63ff;
+  color: #fff;
+}
+
+#student-form button {
+    padding: 13px;
+    margin: 10px auto;
+    width: 51%;
+    background-color: #21db43;
+    border: none;
+    border-radius: 10px;
+}
+
+#student-form button ::after{
+    background-color: red;
+}
+/* btn styling */
+.btn-cont {
+
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+}
+
+#btn {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+/* table stying */
+table {
+    width: 80%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 15px;
+
+}
+
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+#delete-btn {
+    border: none;
+    background-color: transparent;
+}
+
+#delete-btn:hover {
+    transform: scale(1.1);
+}
+
+#delete-btn img {
+    width: 24px;
+    height: 24px;
+}
+
+/* search style */
+.search-box {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+#search {
+    border-radius: 4px;
+    width: 20%;
+    padding: 5px;
+}
+
+#Search-btn {
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+}
+
+/* 📱 Responsive Design for Mobiles */
+@media (max-width: 768px) {
+
+  .form {
+    width: 95%;
+    padding: 15px;
+  }
+
+  #student-form {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+  }
+
+  #student-form input,
+  #select,
+  #student-form button {
+    width: 65%;
+  }
+
+  #student-form button {
+    width: 95%;
+    padding: 12px;
+  }
+
+  .search-box {
+    flex-direction: row;
+    width: 90%;
+    align-items: center;
+  }
+
+  #search {
+    width: 40%;
+    justify-self: flex-start;
+  }
+
+  #Search-btn {
+    width: 20%;
+    padding: 5px;
+  }
+
+  table {
+    width: 95%;
+    font-size: 14px;
+  }
+
+  th,
+  td {
+    padding: 8px;
+  }
+}
+
+/* 📱 Extra Small Screens */
+@media (max-width: 480px) {
+  #student-form button {
+    font-size: 14px;
+    padding: 10px;
+    width: 30%;
+  }
+
+  #search {
+    font-size: 14px;
+  }
+
+  th,
+  td {
+    font-size: 12px;
+  }
+}
