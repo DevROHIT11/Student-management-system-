@@ -65,7 +65,7 @@ npm install
 node index.js
 ```
 
-## Server will start at:
+### Server will start at:
 👉 http://localhost:3000/
 
 ---
@@ -87,7 +87,7 @@ mysql -h <host> -u <user> -p <database> < student_students.sql
 ```
 ---
 
-### 🪪License
+## 🪪License
 This project is licensed under the MIT License — free to use and modify.
 
 ---
