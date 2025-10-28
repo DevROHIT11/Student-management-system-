@@ -93,7 +93,7 @@ app.get("/student/search", (req, res) => {
   data.query(sql, [value, value, value], (err, result) => {
     if (err) {
       console.log("Error in searching ", err.message);
-      res.json({message : "error in searching"}) ;
+      res.json([]) ;
     } else {
       console.log("Match found", result);
       res.json(result);
