@@ -1,2 +1,0 @@
-
-let connection = mysql.createConnection({
