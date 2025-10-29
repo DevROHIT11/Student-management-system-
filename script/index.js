@@ -86,7 +86,7 @@ app.get("/student/search", (req, res) => {
   const { q } = req.query;
   // console.log(q);
   const sql =
-    "SELECT * FROM STUDENTS WHERE id LIKE ? OR name LIKE ? OR course LIKE ? ";
+    "SELECT * FROM students WHERE id LIKE ? OR name LIKE ? OR course LIKE ? ";
   // for partial values like ro , 10, py , ja
   const value = `%${q}%`;
   console.log(value);
