@@ -66,7 +66,7 @@ node index.js
 ```
 
 ### Server will start at:
-👉 http://localhost:3000/
+👉 https://student-management-system-hf3m.onrender.com/
 
 ---
 
